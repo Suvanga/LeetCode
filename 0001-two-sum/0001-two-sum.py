@@ -23,9 +23,4 @@ class Solution(object):
       
         
 
-        for i in range(n):
-            compliment = target-nums[i]
-            if compliment in numMap:
-                return [numMap[compliment], i]
-            numMap[nums[i]]= i 
-        return []  
+          
