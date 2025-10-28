@@ -15,5 +15,3 @@ def isAnagram(s: str, t: str) -> bool:
         if countS[c] != countT.get[c,0]:
             return False    
     return True
-
-

@@ -9,4 +9,4 @@ class Solution:
             indices[n] = i
 # Example usage:
 solve = Solution()
-print(solve.twoSum([2,2,7,11,15], 9))  #
+print(solve.twoSum([2,2,7,11,15], 9))  
