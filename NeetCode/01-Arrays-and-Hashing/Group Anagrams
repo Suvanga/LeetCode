@@ -1,0 +1,9 @@
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        cupboard = defaultdict(list)
+        for i , s in enumerate(strs):
+            label = [0] * 26
+            for j , c in enumerate(s):
+                label[ord(c)-ord('a')] += 1 
+            cupboard[tuple(label)].append(s)
+        return list(cupboard.values())
