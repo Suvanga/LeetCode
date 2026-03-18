@@ -1,0 +1,7 @@
+For Top K elements:
+  when you try going through bucket sort using frequency in the third loop we should go through each element in reverse order and the buckets starting at the end in reverse order and try to append it in the result, 
+  and make sure that the length fo the result is equal to the length of the k. 
+  Hint 2 loops required at the end to go through the freq bucket
+
+  For Group anagrams:
+    the label should be kept in a tuple before putting it inside the cupboard, and the cupboard should be a defaultdict(list)
