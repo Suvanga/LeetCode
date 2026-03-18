@@ -18,3 +18,10 @@ For Top K elements:
     res.append(s[i:j])
     again our initial is set to i by saying
     i = j
+
+For products of array except self:
+   prefix will create a result array with left hand side multiplication for 
+  [1,2,3,4] it would look like [1,1,2,6]
+  then the res will have to be multiplied by postfix of each 
+  to get there we must have the postfix such that postfix *= nums[i] begining from the end to 0 and result[i] *= postfix 
+  res = [24,12, 8, 6]
