@@ -1,0 +1,5 @@
+For Valid Palindrome:
+  This is a pretty simple basic problem, we need to check if the value is alphanumeric or not, if it is not then we must increase one of the pointer left or right depending on the 
+  while condition we have
+  after checking that we simply go through the while lopp indexing the string using the pointers and seeing if they match if they dont we can immediately declare it and return False, 
+  if it passes through the loop successfully then we can decide and say that the condition is successful
