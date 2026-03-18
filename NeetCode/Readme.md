@@ -66,5 +66,37 @@ Welcome to my customized NeetCode 150 tracker! I am executing a highly condensed
 
 ---
 
-## 🛠️ Repository Structure
-Organize files into folders by topic to keep things clean!
+
+
+
+# 🕵️‍♂️ The LeetCode Pattern Cheat Sheet
+
+A quick-reference guide to translating interview prompts into actionable algorithms.
+
+---
+
+## 1. The "Sliding Window" Pattern
+* **The Hidden Clues:** "Contiguous", "Subarray", "Substring", "Longest", "Shortest", "Maximum/Minimum".
+* **The Translation:** The word **"Contiguous"** (or subarray/substring) is the ultimate giveaway. It means the items must be sitting right next to each other. Whenever you need to find the "best" chunk of items sitting next to each other, use a sliding window.
+> ⚠️ **The Trap:** If the prompt says "Subsequence" or "Subset", you **cannot** use a sliding window, because subsequences don't have to be next to each other.
+
+## 2. The "Two Pointers" Pattern
+* **The Hidden Clues:** "Sorted array", "Pairs", "Palindromes", "Sum to a target" (when sorted).
+* **The Translation:** If they hand you an array and explicitly tell you *"This array is sorted in ascending order,"* 90% of the time, they want you to put a pointer at index `0` and a pointer at the very end, and squeeze them together based on the math.
+
+## 3. The "Heap / Priority Queue" Pattern
+* **The Hidden Clues:** "Top K", "Kth largest/smallest", "Most frequent", "K closest".
+* **The Translation:** Anytime the problem asks you to keep a "running leaderboard" or find the extreme top/bottom values of a massive dataset, do not sort the whole array! Sorting takes $O(n \log n)$ time. Pushing items into a Heap of size `K` takes $O(n \log k)$ time, which makes the interviewer very happy.
+
+## 4. The "Binary Search" Pattern
+* **The Hidden Clues:** "Sorted", "Find a target", OR they give you an explicit constraint: *"You must write an algorithm with $O(\log n)$ runtime complexity."*
+* **The Translation:** If an array is sorted, and you need to find something specific, never loop through it one by one. Cut it in half.
+
+## 5. The "Graphs / Grids (DFS & BFS)" Pattern
+* **The Hidden Clues:** "2D Grid", "Matrix", "Connected components", "Shortest path", "Minimum steps".
+* **The Translation:** * If you see a Grid and need to find "islands" or groupings, use **DFS** (Depth-First Search - exploring all the way down before looking around).
+  * If the prompt explicitly asks for the *"Shortest Path"* or *"Minimum Steps"* to reach a target, you **must** use **BFS** (Breadth-First Search - expanding outward layer by layer like a water ripple).
+
+## 6. The "Dynamic Programming" Pattern
+* **The Hidden Clues:** "Maximum/Minimum number of ways to...", "Find the optimal strategy", "Choices that affect future choices".
+* **The Translation:** If the problem asks you to make decisions (e.g., *"If I rob this house, I can't rob the next one. What is the max money I can make?"*), and doing it by brute force would require checking millions of combinations, it is a DP problem.
