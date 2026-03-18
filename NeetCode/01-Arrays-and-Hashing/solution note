@@ -5,3 +5,16 @@ For Top K elements:
 
   For Group anagrams:
     the label should be kept in a tuple before putting it inside the cupboard, and the cupboard should be a defaultdict(list)
+  
+  For encode and decode
+  i is the initial start at 0 , j = i after that there should be a loop running which we would want to run until 
+    while s[j] !=#
+      j = j+1
+    so j has the point of "#" and i is the representation of the number which we can slice by using 
+    length = int(s[i:j]) such that 0 is the number and j is the end point representing "#"
+    again I start with incrementing i with 1+j as it represents the start of the word
+    i = 1+j
+    j = length + i
+    res.append(s[i:j])
+    again our initial is set to i by saying
+    i = j
