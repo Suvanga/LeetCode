@@ -25,3 +25,7 @@ For products of array except self:
   then the res will have to be multiplied by postfix of each 
   to get there we must have the postfix such that postfix *= nums[i] begining from the end to 0 and result[i] *= postfix 
   res = [24,12, 8, 6]
+
+For Longest Consecutive Sequence
+  Firstlky we change it to the set, we only start counting the length if the previous element does not exist in the set, so we start making a length chain adding
+  one and seeing if the element exist in the set I do this while (num+ length) in set, I use the max(length, longest) parameter to store the longest element to make sure I select only th longest one 
