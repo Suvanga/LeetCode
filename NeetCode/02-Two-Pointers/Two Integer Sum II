@@ -1,0 +1,8 @@
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        hashprev={}
+        for i, n in enumerate(numbers):
+            val = target - n
+            if val in hashprev:
+                return [hashprev[val]+1, i+1]
+            hashprev[n] = i
