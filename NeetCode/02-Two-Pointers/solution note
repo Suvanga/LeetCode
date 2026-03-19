@@ -3,3 +3,9 @@ For Valid Palindrome:
   while condition we have
   after checking that we simply go through the while lopp indexing the string using the pointers and seeing if they match if they dont we can immediately declare it and return False, 
   if it passes through the loop successfully then we can decide and say that the condition is successful
+
+
+For Container With Most Water
+  This is a pretty basic simple problem of checking the are and keeping track of the area by using min and max function, incrementing the pouinter from left +1 if right value is greater
+  than the left one and vice versa, doing it until l<r. 
+
